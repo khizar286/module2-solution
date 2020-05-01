@@ -1,83 +1,70 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment no 3</title>
+    <title>Responsive Web Page with Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
   </head>
-    <body>
+<body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        <a id="top" class="navbar-brand" href="index.html">Food, LLC</a>
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <p>Food,LLC</p>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-  <span class="sr-only">Toggle navigation</span>
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-  <span class="icon-bar"></span>
-</button>
-</div>
 
-<div id="collapsable-nav" class="collapse navbar-collapse">
-</div><!-- .collapse .navbar-collapse -->
-</div><!-- .container -->
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a id="chickenBt" href="#chickenRecipe"><br class="hidden-xs"> <center>Chicken</center></a>
+            </li>
+            <li>
+              <a id="beefBt" href="#beefRecipe"><br class="hidden-xs"> <center>Beef</center></a>
+            </li>
+            <li>
+              <a id="sushiBt" href="#sushiRecipe"><br class="hidden-xs"> <center>Sushi</center></a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
   </header>
-  <section  class="section1">
-    <h1>Our Menu</h1>
-  </section>
-  <section>
-    <div class="one">
-      <div class="Chicken"> Chicken </div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Repellendus dignissimos aut quasi quibusdam aspernatur possimus
-        officia nulla consectetur velit! At, asperiores dolorem. Et iure
-        assumenda, repudiandae laudantium, voluptatibus ex dignissimos,
-        eum quaerat ducimus cupiditate corporis totam. Illo, alias voluptatem
-        accusamus ut natus consequuntur quis laboriosam doloribus porro vero
-        assumenda quo temporibus quos quam quisquam, libero quod, itaque eius
-        sit ducimus totam iste possimus architecto debitis? </p>
+  <h1>Our Menu</h1>
 
-    </div>
-    <div class="two">
-      <div class="Beef"> Beef </div>
+  <div id="chickenRecipe"><div id="bigBox" class="col-lg-3 col-sm-5"><h2>Chicken</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div></div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Repellendus dignissimos aut quasi quibusdam aspernatur possimus
-        officia nulla consectetur velit! At, asperiores dolorem. Et iure
-        assumenda, repudiandae laudantium, voluptatibus ex dignissimos,
-        eum quaerat ducimus cupiditate corporis totam. Illo, alias voluptatem
-        accusamus ut natus consequuntur quis laboriosam doloribus porro vero
-        assumenda quo temporibus quos quam quisquam, libero quod, itaque eius
-        sit ducimus? </p>
+  <div id="beefRecipe"><div id="bigBox" class="col-lg-3 col-sm-5"><h2>Beef</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div></div>
 
-    </div>
-    <div class="two">
-      <div class="Sushi">Sushi </div>
+  <div id="sushiRecipe"><div id="bigBox" class="col-lg-3 col-sm-11"><h2>Sushi</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div></div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Repellendus dignissimos aut quasi quibusdam aspernatur possimus
-        officia nulla consectetur velit! At, asperiores dolorem. Et iure
-        assumenda, repudiandae laudantium, voluptatibus ex dignissimos,
-        eum quaerat ducimus cupiditate corporis totam. Illo, alias voluptatem
-        accusamus ut natus consequuntur quis laboriosam doloribus porro vero
-        assumenda quo temporibus quos quam quisquam, libero quod, itaque eius
-        sit ducimus? </p>
 
-    </div>
 
-  </section>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+  <a href="#top"><center><img src="https://i.imgur.com/3hKHPmm.png" height="42" width="42"></img></center></a>
+</body>
 </html>
